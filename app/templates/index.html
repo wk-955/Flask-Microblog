@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+	<h1>{{ _('你好, %(username)s!', username=current_user.username) }}</h1>
+	{% if form %}
+	{{ wtf.quick_form(form) }}
+	<br>
+	{% endif %}
+	{% for post in posts %}
+		{% include '_post.html' %}
+	{% endfor %}
+
+	<nav aria-label="...">
+		<ul class="pager">
+			<li class="previous{% if not prev_url %} disabled{% endif %}">
+				<a href="{{ prev_url or '#' }}">
+					<span aria-hidden="true">&larr;</span> {{ _('上一页') }}
+				</a>
+			</li>
+
+			<li class="next{% if not next_url %} disabled{% endif %}">
+				<a href="{{ next_url or '#' }}">
+					{{ _('下一页') }} <span aria-hidden="true">&rarr;</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+{% endblock %}
+
+
+{#{% extends "base.html" %}#}
+{##}
+{#{% block content %}#}
+{#    <h1>Hello, {{ current_user.username }}!</h1>#}
+{#    {% if form %}#}
+{#    <form action="" method="post">#}
+{#        {{ form.hidden_tag() }}#}
+{#        <p>#}
+{#            {{ form.post.label }}<br>#}
+{#            {{ form.post(cols=32, rows=4) }}<br>#}
+{#            {% for error in form.post.errors %}#}
+{#            <span style="color: red;">[{{ error }}]</span>#}
+{#            {% endfor %}#}
+{#        </p>#}
+{#        <p>{{ form.submit() }}</p>#}
+{#    </form>#}
+{#    {% endif %}#}
+{#    {% for post in posts %}#}
+{#    <div><p><b>{% include '_post.html' %}</b></p></div>#}
+{#    {% endfor %}#}
+{#    {% if prev_url %}#}
+{#    <a href="{{ prev_url }}">前一页</a>#}
+{#    {% endif %}#}
+{#    {% if next_url %}#}
+{#    <a href="{{ next_url }}">后一页</a>#}
+{#    {% endif %}#}
+{#    <nav aria-label="...">#}
+{#        <ul class="pager">#}
+{#            <li class="previous{% if not prev_url %} disabled{% endif %}">#}
+{#                <a href="{{ prev_url or '#' }}">#}
+{#                    <span aria-hidden="true">&larr;</span> Newer posts#}
+{#                </a>#}
+{#            </li>#}
+{#            <li class="next{% if not next_url %} disabled{% endif %}">#}
+{#                <a href="{{ next_url or '#' }}">#}
+{#                    Older posts <span aria-hidden="true">&rarr;</span>#}
+{#                </a>#}
+{#            </li>#}
+{#        </ul>#}
+{#    </nav>#}
+{#{% endblock %}#}
+
+
+
+{#<!DOCTYPE html>#}
+{#<html>#}
+{#	<head>#}
+{#		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />#}
+{#        {% if title %}#}
+{#		<title>{{ title }}落泪！</title>#}
+{#        {% else %}#}
+{#        <title>Nice to meet you, 靓仔!</title>#}
+{#        {% endif %}#}
+{#	</head>#}
+{#	<body>#}
+{#		<h1>Hello, {{ user.username }} !</h1>#}
+{#        {% for post in posts %}#}
+{#        <div><p>{{ post.author.username }} says： <b>{{ post.body }}</b></p></div>#}
+{#        {% endfor %}#}
+{#	</body>#}
+{#</html>#}

@@ -1,0 +1,322 @@
+# Chinese translations for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-08-06 12:01+0800\n"
+"PO-Revision-Date: 2019-07-22 16:26+0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: app/__init__.py:24
+msgid "请登录."
+msgstr ""
+
+#: app/translate.py:9
+msgid "Error1:the translation service is not configured."
+msgstr ""
+
+#: app/translate.py:11
+msgid "Error2:the translation service is not configured."
+msgstr ""
+
+#: app/auth/email.py:8
+msgid "[Microblog] Reset Your Password"
+msgstr ""
+
+#: app/auth/forms.py:9 app/auth/forms.py:15 app/main/forms.py:10
+msgid "用户名"
+msgstr ""
+
+#: app/auth/forms.py:10 app/auth/forms.py:17 app/auth/forms.py:38
+msgid "密码"
+msgstr ""
+
+#: app/auth/forms.py:11
+msgid "记住密码"
+msgstr ""
+
+#: app/auth/forms.py:12 app/auth/routes.py:31 app/templates/auth/login.html:5
+msgid "登录"
+msgstr ""
+
+#: app/auth/forms.py:16 app/auth/forms.py:33
+msgid "邮箱"
+msgstr ""
+
+#: app/auth/forms.py:18 app/auth/forms.py:39
+msgid "确认密码"
+msgstr ""
+
+#: app/auth/forms.py:19 app/templates/auth/register.html:5
+msgid "注册"
+msgstr ""
+
+#: app/auth/forms.py:24
+msgid "用户名已经存在"
+msgstr ""
+
+#: app/auth/forms.py:29
+msgid "邮箱已经注册"
+msgstr ""
+
+#: app/auth/forms.py:34
+msgid "重置密码"
+msgstr ""
+
+#: app/auth/forms.py:40
+msgid "请求密码重置"
+msgstr ""
+
+#: app/auth/routes.py:21
+msgid "用户名或密码错误!"
+msgstr ""
+
+#: app/auth/routes.py:50
+msgid "恭喜！你已经成功注册！"
+msgstr ""
+
+#: app/auth/routes.py:65
+msgid "前往邮箱重置你的密码"
+msgstr ""
+
+#: app/auth/routes.py:81
+msgid "你的密码已重置"
+msgstr ""
+
+#: app/main/forms.py:11
+msgid "个性签名"
+msgstr ""
+
+#: app/main/forms.py:12 app/main/forms.py:27 app/main/forms.py:43
+msgid "提交"
+msgstr ""
+
+#: app/main/forms.py:22
+msgid "名字已被注册"
+msgstr ""
+
+#: app/main/forms.py:26
+msgid "说点什么"
+msgstr ""
+
+#: app/main/forms.py:31 app/main/routes.py:143
+msgid "搜索"
+msgstr ""
+
+#: app/main/forms.py:42 app/templates/messages.html:4
+msgid "消息"
+msgstr ""
+
+#: app/main/routes.py:33
+msgid "成功推送！"
+msgstr ""
+
+#: app/main/routes.py:81
+msgid "你的更改已保存！"
+msgstr ""
+
+#: app/main/routes.py:94 app/main/routes.py:110
+#, python-format
+msgid "用户 %(username)s 未找到."
+msgstr ""
+
+#: app/main/routes.py:97 app/main/routes.py:113
+msgid "你不能关注你自己!"
+msgstr ""
+
+#: app/main/routes.py:101
+#, python-format
+msgid "你已经关注 %(username)s!"
+msgstr ""
+
+#: app/main/routes.py:117
+#, python-format
+msgid "你已不再关注 %(username)s!"
+msgstr ""
+
+#: app/main/routes.py:156
+msgid "你的消息已经发送！"
+msgstr ""
+
+#: app/main/routes.py:158
+msgid "发信息"
+msgstr ""
+
+#: app/main/routes.py:191
+msgid "导出任务当前正在进行中"
+msgstr ""
+
+#: app/main/routes.py:193
+msgid "正在导出邮件…"
+msgstr ""
+
+#: app/templates/_post.html:16
+#, python-format
+msgid "%(username)s %(when)s 说"
+msgstr ""
+
+#: app/templates/_post.html:23
+msgid "Translate"
+msgstr ""
+
+#: app/templates/edit_profile.html:5
+msgid "修改个人信息"
+msgstr ""
+
+#: app/templates/index.html:5
+#, python-format
+msgid "你好, %(username)s!"
+msgstr ""
+
+#: app/templates/index.html:18 app/templates/search.html:13
+msgid "上一页"
+msgstr ""
+
+#: app/templates/index.html:24 app/templates/search.html:19
+msgid "下一页"
+msgstr ""
+
+#: app/templates/messages.html:12
+msgid "前一页"
+msgstr ""
+
+#: app/templates/messages.html:17
+msgid "后一页"
+msgstr ""
+
+#: app/templates/search.html:4
+msgid "搜索结果"
+msgstr ""
+
+#: app/templates/send_message.html:5
+#, python-format
+msgid "发送信息给 %(recipient)s"
+msgstr ""
+
+#: app/templates/user_popup.html:16
+msgid "上次登录"
+msgstr ""
+
+#: app/templates/user_popup.html:21
+#, python-format
+msgid "%(count)d 关注"
+msgstr ""
+
+#: app/templates/user_popup.html:21
+#, python-format
+msgid "%(count)d 粉丝"
+msgstr ""
+
+#: app/templates/user_popup.html:26
+msgid "关注"
+msgstr ""
+
+#: app/templates/user_popup.html:30
+msgid "取消关注"
+msgstr ""
+
+#: app/templates/auth/login.html:13
+msgid "新用户？"
+msgstr ""
+
+#: app/templates/auth/login.html:13
+msgid "点击此处注册！"
+msgstr ""
+
+#: app/templates/auth/login.html:15
+msgid "忘记密码？"
+msgstr ""
+
+#: app/templates/auth/login.html:16
+msgid "点击此处重设密码"
+msgstr ""
+
+#: app/templates/auth/reset_password.html:29
+msgid "设置你的密码"
+msgstr ""
+
+#: app/templates/auth/reset_password_request.html:22
+msgid "设置密码"
+msgstr ""
+
+#: app/templates/errors/404.html:4
+msgid "Not Found"
+msgstr ""
+
+#: app/templates/errors/404.html:5 app/templates/errors/500.html:6
+msgid "返回"
+msgstr ""
+
+#: app/templates/errors/500.html:4
+msgid "An unexpected error has occurred"
+msgstr ""
+
+#: app/templates/errors/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr ""
+
+#~ msgid "Please log in to access this page."
+#~ msgstr ""
+
+#~ msgid "Your post is now live!"
+#~ msgstr ""
+
+#~ msgid "File Not Found"
+#~ msgstr ""
+
+#~ msgid "%(username)s 说 %(when)s"
+#~ msgstr ""
+
+#~ msgid "Hello, %(username)s!"
+#~ msgstr ""
+
+#~ msgid "Welcome to Microblog"
+#~ msgstr ""
+
+#~ msgid "切换导航"
+#~ msgstr ""
+
+#~ msgid "Microblog"
+#~ msgstr ""
+
+#~ msgid "主页"
+#~ msgstr ""
+
+#~ msgid "动态"
+#~ msgstr ""
+
+#~ msgid "个人信息"
+#~ msgstr ""
+
+#~ msgid "注销"
+#~ msgstr ""
+
+#~ msgid "Error: Could not contact server."
+#~ msgstr ""
+
+#~ msgid "用户"
+#~ msgstr ""
+
+#~ msgid "%(count)d 个关注者"
+#~ msgstr ""
+
+#~ msgid "%(count)d 个粉丝"
+#~ msgstr ""
+
+#~ msgid "上次登录:"
+#~ msgstr ""
+
+#~ msgid "发送私人信息"
+#~ msgstr ""
+
